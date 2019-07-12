@@ -1,0 +1,71 @@
+﻿<Window x:Class="WpfApp12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp12"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="280">
+    <DockPanel Background="Black">
+        <StackPanel DockPanel.Dock="Left" Orientation="Horizontal" Margin="10">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Button x:Name="BtnConnect" Content="Connect" Width="60" Margin="3" Click="BtnConnect_Click"/>
+                    <Button x:Name="BtnStart" Content="Start" Width="60" Margin="3" Click="BtnStart_Click"/>
+                    <TextBox x:Name="TbStatus" Width="85" Margin="3"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="In Temperature" Foreground="White" Width="100"/>
+                    <TextBox x:Name="TbInTemperature" Width="100" Margin="3"/>
+                    <Label Content="C" Foreground="White" Width="40" HorizontalAlignment="Right"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Out Temperature" Foreground="White" Width="100"/>
+                    <TextBox x:Name="TbOutTemperature" Width="100" Margin="3"/>
+                    <Label Content="C" Foreground="White" Width="40" HorizontalAlignment="Right"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Dew Point" Foreground="White" Width="100"/>
+                    <TextBox x:Name="TbDewPoint" Width="100" Margin="3"/>
+                    <Label Content="C" Foreground="White" Width="40" HorizontalAlignment="Right"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Wet Bulb Temp" Foreground="White" Width="100"/>
+                    <TextBox x:Name="TbWetBulbTemp" Width="100" Margin="3"/>
+                    <Label Content="C" Foreground="White" Width="40" HorizontalAlignment="Right"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="In Humidity" Foreground="White" Width="100"/>
+                    <TextBox x:Name="TbInHumidity" Width="100" Margin="3"/>
+                    <Label Content="%" Foreground="White" Width="40" HorizontalAlignment="Right"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Out Humidity" Foreground="White" Width="100"/>
+                    <TextBox x:Name="TbOutHumidity" Width="100" Margin="3"/>
+                    <Label Content="%" Foreground="White" Width="40" HorizontalAlignment="Right"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Barometer" Foreground="White" Width="100"/>
+                    <TextBox x:Name="TbBarometer" Width="100" Margin="3"/>
+                    <Label Content="hPa" Foreground="White" Width="40" HorizontalAlignment="Right"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Wind Speed" Foreground="White" Width="100"/>
+                    <TextBox x:Name="TbWindSpeed" Width="100" Margin="3"/>
+                    <Label Content="Km/h" Foreground="White" Width="40" HorizontalAlignment="Right"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Wind Direction" Foreground="White" Width="100"/>
+                    <TextBox x:Name="TbWindDirection" Width="100" Margin="3"/>
+                    <Label Content="deg" Foreground="White" Width="40" HorizontalAlignment="Right"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Rain Rate" Foreground="White" Width="100"/>
+                    <TextBox x:Name="TbRainRate" Width="100" Margin="3"/>
+                    <Label Content="In/h" Foreground="White" Width="40" HorizontalAlignment="Right"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+    </DockPanel>
+</Window>
